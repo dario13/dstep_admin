@@ -1,0 +1,12 @@
+/*Menu*/
+.menu-wrapper {
+  width: 5vw;
+}
+.menu {
+  background-color: white;
+}
+
+.icon-menu {
+  font-size: 3em;
+  text-align: center;
+}
