@@ -3,7 +3,7 @@
 $size-biggest: 4rem;
 
 // Update some of Bulma's component variables
-$body-background-color: #bdbdbd;
+$body-background-color: #f0f2f5;
 $input-shadow: none;
 $title-size: $size-biggest;
 $card-background-color: #ecebeb;
@@ -19,3 +19,6 @@ $card-background-color: #ecebeb;
 @import "../node_modules/bulma/sass/elements/icon.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 @import "../node_modules/bulma/sass/components/card.sass";
+@import "../node_modules/bulma/sass/components/menu.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+@import "../node_modules/@creativebulma/bulma-tooltip/src/sass/index.sass";
