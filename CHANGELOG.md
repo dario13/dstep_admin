@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/dario13/dstep_admin/compare/v1.0.0...v1.1.0) (2020-08-22)
+
+
+### Features
+
+* :heavy_plus_sign: react icons ([ffd7316](https://github.com/dario13/dstep_admin/commit/ffd73168baaa63f6e78991bd479e1a464bfe7066))
+* :sparkles: menu bar created ([09a65f7](https://github.com/dario13/dstep_admin/commit/09a65f7298b9d9b8f11153fd0260142c26c3dad5))
+* ✨added routes to project and menu bar ([f5cf386](https://github.com/dario13/dstep_admin/commit/f5cf386b425463086b264983740eadd2f9bc9cda))
+
 # 1.0.0 (2020-08-21)
 
 
