@@ -8,17 +8,9 @@ import { AiOutlineUser } from "react-icons/ai";
 
 export type Props = {
   name: string;
-  active: boolean;
-  href: string;
-  handleClick: (id: string) => void;
 };
 
-export const MenuButton: React.FC<Props> = ({
-  name,
-  active,
-  href,
-  handleClick,
-}) => {
+export const MenuButton: React.FC<Props> = ({ name }) => {
   const iconRender = (iconName: string) => {
     switch (iconName) {
       case "Tablero":
@@ -36,13 +28,8 @@ export const MenuButton: React.FC<Props> = ({
     }
   };
   return (
-    <a
-      href={href}
-      className={"has-tooltip-bottom " + (active && "is-active")}
-      data-tooltip={name}
-      onClick={() => handleClick(name)}
-    >
+    <div className={"has-tooltip-bottom is-active"} data-tooltip={name}>
       <div className="icon-menu">{iconRender(name)}</div>
-    </a>
+    </div>
   );
 };

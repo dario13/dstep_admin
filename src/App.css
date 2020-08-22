@@ -1,4 +1,7 @@
 /*Menu*/
+.menu-wrapper {
+  width: 5vw;
+}
 .menu {
   background-color: white;
 }
