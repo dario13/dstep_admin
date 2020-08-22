@@ -1,64 +1,40 @@
 import React from "react";
 import { MenuButton } from "./MenuButton";
+import { NavLink } from "react-router-dom";
 
 export const Menu: React.FC = () => {
-  const [buttonActived, setButtonActived] = React.useState<string>("");
-  const handleClick = (id: string) => {
-    setButtonActived(id);
-  };
-
-  console.log(buttonActived);
-
   return (
     <aside className="menu">
       <ul className="menu-list">
         <li>
-          <MenuButton
-            name="Tablero"
-            active={buttonActived === "Tablero"}
-            href="#"
-            handleClick={handleClick}
-          />
+          <NavLink activeClassName="is-active" to={"/dashboard"}>
+            <MenuButton name="Tablero" />
+          </NavLink>
         </li>
         <li>
-          <MenuButton
-            name="Cuentas"
-            active={buttonActived === "Cuentas"}
-            href="#"
-            handleClick={handleClick}
-          />
+          <NavLink activeClassName="is-active" to={"/accounts"}>
+            <MenuButton name="Cuentas" />
+          </NavLink>
         </li>
         <li>
-          <MenuButton
-            name="Stock"
-            active={buttonActived === "Stock"}
-            href="#"
-            handleClick={handleClick}
-          />
+          <NavLink activeClassName="is-active" to={"/stock"}>
+            <MenuButton name="Stock" />
+          </NavLink>
         </li>
         <li>
-          <MenuButton
-            name="Ventas"
-            active={buttonActived === "Ventas"}
-            href="#"
-            handleClick={handleClick}
-          />
+          <NavLink activeClassName="is-active" to={"/sales"}>
+            <MenuButton name="Ventas" />
+          </NavLink>
         </li>
         <li>
-          <MenuButton
-            name="Movimientos"
-            active={buttonActived === "Movimientos"}
-            href="#"
-            handleClick={handleClick}
-          />
+          <NavLink activeClassName="is-active" to={"/transactions"}>
+            <MenuButton name="Movimientos" />
+          </NavLink>
         </li>
         <li>
-          <MenuButton
-            name="Perfil"
-            active={buttonActived === "Perfil"}
-            href="#"
-            handleClick={handleClick}
-          />
+          <NavLink activeClassName="is-active" to={"/profile"}>
+            <MenuButton name="Perfil" />
+          </NavLink>
         </li>
       </ul>
     </aside>
