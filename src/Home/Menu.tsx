@@ -7,32 +7,32 @@ export const Menu: React.FC = () => {
     <aside className="menu">
       <ul className="menu-list">
         <li>
-          <NavLink activeClassName="is-active" to={"/dashboard"}>
+          <NavLink activeClassName="is-active" to={"/home/dashboard"}>
             <MenuButton name="Tablero" />
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="is-active" to={"/accounts"}>
+          <NavLink activeClassName="is-active" to={"/home/accounts"}>
             <MenuButton name="Cuentas" />
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="is-active" to={"/stock"}>
+          <NavLink activeClassName="is-active" to={"/home/stock"}>
             <MenuButton name="Stock" />
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="is-active" to={"/sales"}>
+          <NavLink activeClassName="is-active" to={"/home/sales"}>
             <MenuButton name="Ventas" />
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="is-active" to={"/transactions"}>
+          <NavLink activeClassName="is-active" to={"/home/transactions"}>
             <MenuButton name="Movimientos" />
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="is-active" to={"/profile"}>
+          <NavLink activeClassName="is-active" to={"/home/profile"}>
             <MenuButton name="Perfil" />
           </NavLink>
         </li>
