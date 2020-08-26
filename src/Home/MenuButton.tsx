@@ -28,7 +28,7 @@ export const MenuButton: React.FC<Props> = ({ name }) => {
     }
   };
   return (
-    <div className={"has-tooltip-bottom is-active"} data-tooltip={name}>
+    <div className="has-tooltip-bottom is-active" data-tooltip={name}>
       <div className="icon-menu">{iconRender(name)}</div>
     </div>
   );
